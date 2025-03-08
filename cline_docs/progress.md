@@ -3,16 +3,19 @@
 ## What works
 - Successfully cloned the CouchDB GitHub repository
 - Created a basic Cloudflare Worker setup with:
-  - wrangler.toml configuration
-  - Entry point file (src/index.js)
-  - Package configuration (package.json)
-  - Documentation (README.md)
-  - Deployment script (deploy.sh)
+  - Root-level configuration files:
+    - wrangler.toml
+    - src/index.js
+    - package.json
+    - .gitignore
+    - README.md
+  - Worker subdirectory with documentation and helper scripts:
+    - Documentation (IMPLEMENTATION_PLAN.md, USAGE_EXAMPLES.md, README.md)
+    - Helper scripts (init.sh, test.sh, deploy.sh)
 
 ## What's left to build
 1. **Testing and Deployment**:
-   - Test the Worker locally
-   - Deploy to Cloudflare
+   - Test the deployment with the root-level configuration files
    - Verify proxy functionality
 
 2. **Core Functionality**:
@@ -33,5 +36,5 @@
 
 ## Progress status
 - **Current Phase**: Initial Setup
-- **Progress**: 15%
-- **Status**: Created basic Cloudflare Worker configuration and proxy implementation
+- **Progress**: 20%
+- **Status**: Created root-level configuration files to address deployment error

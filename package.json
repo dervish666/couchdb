@@ -1,0 +1,16 @@
+{
+  "name": "couchdb-worker",
+  "version": "0.1.0",
+  "description": "CouchDB on Cloudflare Workers",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
