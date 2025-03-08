@@ -4,7 +4,10 @@ compatibility_date = "2023-12-01"
 
 [vars]
 # Environment variables for your Worker
-COUCHDB_URL = "https://couchdb.brisflix.workers.dev:5984" # Replace with your actual CouchDB URL
+# COUCHDB_URL = "http://your-actual-couchdb-instance:5984"
+
+# Since we don't have a CouchDB instance to proxy to yet,
+# let's make the worker return its own responses for now
 
 # Uncomment if you need KV storage
 # [[kv_namespaces]]
